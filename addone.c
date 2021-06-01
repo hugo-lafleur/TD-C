@@ -6,5 +6,5 @@ int addone(int x){
     }
 
 int main(int x){
-    printf("%d\n",addone(3));
+    printf("%d\n", addone(3));
 }
