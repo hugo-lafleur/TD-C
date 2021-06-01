@@ -10,6 +10,6 @@ int fibo(int n){
         return(a);
 }
 int main(int n){
-    printf("%d\n",fibo(2));
+    printf("%d\n",fibo(5));
 }
     
