@@ -70,5 +70,24 @@ void print_chaine(char s[]){
         printf("%c",s[i]);
         i++;
     }
-    printf("\"");
+    printf("\"\n");
+}
+
+void affiche_chaine(){
+    char buffer[100];
+    printf("Veuillez saisir la chaîne à afficher : \n");
+    scanf( "%[^\n]", buffer );
+    print_chaine(buffer);
+}
+
+int nb_uns(int n){
+    int i = n;
+    int res = 0;
+    while(i){
+        if(i%2 == 1){
+            res ++;
+        }
+        i >>= 1;
+    }
+    return res;
 }

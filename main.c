@@ -28,12 +28,13 @@ int main(){
     char s[] = "abcde";
     printf("s = ");
     print_chaine(s);
-    printf("\n");
     printf("mylen(s) = %d\n",mylen(s));
     char u[] = "abcde";
     printf("u = ");
     print_chaine(u);
-    printf("\n");
     printf("Comparaison de s et u : ");
     printf("%d\n",compare_chaines(s,u));
+    affiche_chaine();
+    printf("Le nombre de 1 dans la représentation binaire de 5 est : ");
+    printf("%d\n",nb_uns(5));
 }
