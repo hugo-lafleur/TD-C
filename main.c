@@ -16,4 +16,12 @@ int main(){
        t[i] = 2*i;
     }
     print_tableau(51,t);
+    int tab1[5] = {1,2,3,4,5};
+    int tab2[5] = {6,7,8,9,10};
+    printf("tab1 = ");
+    print_tableau(5,tab1);
+    printf("tab2 = ");
+    print_tableau(5,tab2);
+    printf("tab1 + tab2 =");
+    sum(5,tab1,tab2);
 }

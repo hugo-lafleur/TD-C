@@ -17,10 +17,20 @@ int fibo(int n){
         return a;
 }
 
-void print_tableau(int n, int t[n]){
-    printf("[");
+void print_tableau(int n, int t[]){
+    printf("[ ");
     for(int i=0;i<n;i++){
         printf("%d ",t[i]);
+    }
+    printf("]\n");
+}
+
+void sum(int n, int t[], int u[]){
+    int res[n];
+    printf("[ ");
+    for(int i = 0; i<n; i++){
+        res[i] = t[i] + u[i];
+        printf("%d ",res[i]);
     }
     printf("]\n");
 }
