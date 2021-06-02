@@ -24,4 +24,6 @@ int main(){
     print_tableau(5,tab2);
     printf("tab1 + tab2 =");
     sum(5,tab1,tab2);
+    char s[5] = "abcde";
+    printf("mylen(s) = %d\n",mylen(s));
 }

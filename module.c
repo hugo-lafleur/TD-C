@@ -34,3 +34,11 @@ void sum(int n, int t[], int u[]){
     }
     printf("]\n");
 }
+
+int mylen(char s[]){
+    int res = 0;
+    while(s[res]){
+        res ++;
+    }
+    return res;
+}
