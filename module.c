@@ -27,12 +27,10 @@ void print_tableau(int n, int t[]){
 
 void sum(int n, int t[], int u[]){
     int res[n];
-    printf("[ ");
     for(int i = 0; i<n; i++){
         res[i] = t[i] + u[i];
-        printf("%d ",res[i]);
     }
-    printf("]\n");
+    print_tableau(n,res);
 }
 
 int mylen(char s[]){
@@ -41,4 +39,36 @@ int mylen(char s[]){
         res ++;
     }
     return res;
+}
+
+int compare_chaines(char s[], char u[]){
+    int i = 0;
+    while(s[i] && u[i]){
+        if(s[i] < u[i]){
+            return -1;
+        }
+        if(s[i] < u[i]){
+            return 1;
+        }
+        i++;
+        
+    }
+    if(mylen(s) < mylen(u)){
+        return -1;
+    }
+    if(mylen(u) < mylen(s)){
+        return 1;
+    }
+    return 0;
+}
+
+void print_chaine(char s[]){
+    int n = mylen(s);
+    printf("\"");
+    int i = 0;
+    while(s[i]){
+        printf("%c",s[i]);
+        i++;
+    }
+    printf("\"");
 }

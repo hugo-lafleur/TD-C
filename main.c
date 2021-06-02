@@ -1,5 +1,6 @@
 #include "module.h"
 #include <stdio.h>
+#include <string.h>
 
 int main(){
     int a = 5;
@@ -24,6 +25,15 @@ int main(){
     print_tableau(5,tab2);
     printf("tab1 + tab2 =");
     sum(5,tab1,tab2);
-    char s[5] = "abcde";
+    char s[] = "abcde";
+    printf("s = ");
+    print_chaine(s);
+    printf("\n");
     printf("mylen(s) = %d\n",mylen(s));
+    char u[] = "abcde";
+    printf("u = ");
+    print_chaine(u);
+    printf("\n");
+    printf("Comparaison de s et u : ");
+    printf("%d\n",compare_chaines(s,u));
 }
