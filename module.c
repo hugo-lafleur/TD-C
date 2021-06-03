@@ -122,3 +122,9 @@ int nb_e(char* s){
     }
     return i;
 }
+char* premier_char_z(char* t){
+    char* s;
+    s = stocker(t);
+    *s = 'z';
+    return s;
+}

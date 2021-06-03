@@ -47,4 +47,5 @@ int main(){
     printf("b = ");
     print_chaine(b);
     printf("Le nombres de e dans b est : %d\n",nb_e(b));
+    print_chaine(premier_char_z(s));
 }

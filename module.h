@@ -10,3 +10,4 @@ int nb_uns(int n);
 int length(char *s);
 char* stocker(char t[]);
 int nb_e(char* s);
+char* premier_char_z(char* t);
