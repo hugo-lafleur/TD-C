@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main(){
-    int a = 5;
+    /*int a = 5;
     printf("Hello World\n");
     printf("%d\n",a);
     for(int i=1;i<11;i++){
@@ -36,5 +36,16 @@ int main(){
     printf("%d\n",compare_chaines(s,u));
     affiche_chaine();
     printf("Le nombre de 1 dans la représentation binaire de 5 est : ");
-    printf("%d\n",nb_uns(5));
+    printf("%d\n",nb_uns(5));*/
+    char* s = "abcdef";
+    printf("s = ");
+    print_chaine(s);
+    printf("length(s) = %d\n",length(s));
+    char t[] = "abcdef";
+    print_chaine(stocker(t));
+    char* b = "eeaeeeae";
+    printf("b = ");
+    print_chaine(b);
+    printf("Le nombres de e dans b est : %d\n",nb_e(b));
+    print_chaine(premier_char_z(s));
 }

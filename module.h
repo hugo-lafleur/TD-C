@@ -7,3 +7,7 @@ int compare_chaines(char s[], char u[]);
 void print_chaine(char s[]);
 void affiche_chaine();
 int nb_uns(int n);
+int length(char *s);
+char* stocker(char t[]);
+int nb_e(char* s);
+char* premier_char_z(char* t);

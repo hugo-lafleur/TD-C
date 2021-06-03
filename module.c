@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int addone(int x){
         x = x + 1;
@@ -90,4 +91,40 @@ int nb_uns(int n){
         i >>= 1;
     }
     return res;
+}
+
+int length(char* s){
+    int i = 0;
+    while(*s++){
+        i++;
+    }
+    return i;
+}
+
+char* stocker(char t[]){
+    int n = mylen(t);
+    char* s = malloc(n*sizeof(char));
+    int i = 0;
+    while(t[i]){
+        *(s+i) = t[i];
+        i++;
+    }
+    return s;
+}
+
+int nb_e(char* s){
+    int i = 0;
+    while(*s){
+        if(*s == 'e'){
+            i++;
+        }
+        s++;
+    }
+    return i;
+}
+char* premier_char_z(char* t){
+    char* s;
+    s = stocker(t);
+    *s = 'z';
+    return s;
 }
