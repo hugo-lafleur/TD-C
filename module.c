@@ -103,11 +103,12 @@ int length(char* s){
 
 char* stocker(char t[]){
     int n = mylen(t);
-    char* s = malloc(n*sizeof(char));
+    char* s = malloc((n+1)*sizeof(char));
     int i = 0;
     while(t[i]){
         *(s+i) = t[i];
         i++;
+    *(s+i) = t[i];
     }
     return s;
 }
@@ -122,9 +123,63 @@ int nb_e(char* s){
     }
     return i;
 }
+
 char* premier_char_z(char* t){
     char* s;
     s = stocker(t);
     *s = 'z';
     return s;
+}
+
+int* liste_vide(){
+    int* l = malloc(sizeof(int));
+    *l = 0;
+    return l;
+}
+
+void affiche_liste(int* l){
+    printf("l = [ ");
+    int n = *l;
+    l++;
+    for(int i = 0; i<n; i++){
+        printf("%d ",*l);
+        l++;
+    }
+    printf("]\n");
+}
+
+int* insere_tete(int* l,int x){
+    int* m = liste_vide();
+    *(m+1) = x;
+    *m = *l + 1;
+    for(int i = 1; i<=*l; i++){
+        *(m+1+i) = *(l+i);
+    }
+    return m;
+}
+
+int* insere_queue(int* l, int x){
+    int* m= liste_vide();
+    *m = *l + 1;
+    for(int i = 1; i<=*l; i++){
+        *(m+i) = *(l+i);
+    }
+    *(m+*m) = x;
+    return m;
+}
+
+int taille(int * l){
+    return *l;
+}
+
+int get(int * l, int i){
+    if(i<*l){
+        l++;
+        int j = 0;
+        while(j != i){
+            l++;
+            j++;
+        }
+        return *l;
+    }
 }
