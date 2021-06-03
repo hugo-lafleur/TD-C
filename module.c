@@ -91,3 +91,11 @@ int nb_uns(int n){
     }
     return res;
 }
+
+int length(char* s){
+    int i = 0;
+    while(*(s+i)){
+        i++;
+    }
+    return i;
+}
