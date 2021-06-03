@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int addone(int x){
         x = x + 1;
@@ -99,3 +100,15 @@ int length(char* s){
     }
     return i;
 }
+
+char* stocker(char t[]){
+    int n = mylen(t);
+    char* s = malloc(n*sizeof(char));
+    int i = 0;
+    while(t[i]){
+        *(s+i) = t[i];
+        i++;
+    }
+    return s;
+}
+

@@ -38,5 +38,9 @@ int main(){
     printf("Le nombre de 1 dans la représentation binaire de 5 est : ");
     printf("%d\n",nb_uns(5));*/
     char* s = "abcdef";
+    printf("s = ");
+    print_chaine(s);
     printf("length(s) = %d\n",length(s));
+    char t[] = "abcdef";
+    print_chaine(stocker(t));
 }

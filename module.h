@@ -8,3 +8,4 @@ void print_chaine(char s[]);
 void affiche_chaine();
 int nb_uns(int n);
 int length(char *s);
+char* stocker(char t[]);
