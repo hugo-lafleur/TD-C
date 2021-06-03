@@ -43,4 +43,8 @@ int main(){
     printf("length(s) = %d\n",length(s));
     char t[] = "abcdef";
     print_chaine(stocker(t));
+    char* b = "eeaeeeae";
+    printf("b = ");
+    print_chaine(b);
+    printf("Le nombres de e dans b est : %d\n",nb_e(b));
 }

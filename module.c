@@ -112,3 +112,13 @@ char* stocker(char t[]){
     return s;
 }
 
+int nb_e(char* s){
+    int i = 0;
+    while(*s){
+        if(*s == 'e'){
+            i++;
+        }
+        s++;
+    }
+    return i;
+}
