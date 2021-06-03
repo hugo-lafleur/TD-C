@@ -176,9 +176,8 @@ int get(int * l, int i){
     if(i<*l){
         l++;
         int j = 0;
-        while(j != i){
-            l++;
-            j++;
+        while(j++ != i){
+            l++;;
         }
         return *l;
     }
