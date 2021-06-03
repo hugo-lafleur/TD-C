@@ -94,8 +94,9 @@ int nb_uns(int n){
 
 int length(char* s){
     int i = 0;
-    while(*(s+i)){
+    while(*s){
         i++;
+        s++;
     }
     return i;
 }
