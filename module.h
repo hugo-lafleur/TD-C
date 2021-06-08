@@ -1,3 +1,6 @@
+#ifndef MODULE
+#define MODULE
+
 int addone(int x);
 int fibo(int x);
 void print_tableau(int n, int t[]);
@@ -17,3 +20,5 @@ int taille(int* l);
 int* insere_tete(int* l,int x);
 int* insere_queue(int* l, int x);
 int get(int * l, int i);
+
+#endif

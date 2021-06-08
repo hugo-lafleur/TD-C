@@ -47,7 +47,7 @@ int main(){
     printf("b = ");
     print_chaine(b);
     printf("Le nombres de e dans b est : %d\n",nb_e(b));
-    print_chaine(premier_char_z(s));*/
+    print_chaine(premier_char_z(s));
     int* l = liste_vide();
     affiche_liste(l);
     printf("taille(l) = %d\n",taille(l));
@@ -63,5 +63,5 @@ int main(){
     int* p = insere_tete(n,1);
     affiche_liste(p);
     printf("taille(l) = %d\n",taille(p));
-    printf("l[2] = %d\n",get(p,2));
+    printf("l[2] = %d\n",get(p,2));*/
 }
