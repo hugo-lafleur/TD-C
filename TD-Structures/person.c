@@ -18,3 +18,11 @@ void print_person(Person * p){
     printf("Date de naissance : ");
     print_date(p->bday);
 }
+
+Person * duplic_person(Person * p){
+    Person * res = malloc(sizeof(Person));
+    res->prenom = p->prenom;
+    res->nom = p->nom;
+    res->bday = p->bday;
+    return res;
+}
