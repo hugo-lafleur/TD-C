@@ -3,18 +3,18 @@
 
 #include "point.h"
 
-void print_point(point * p){
+void print_point(Point * p){
     printf("[%d,%d]\n",p->x,p->y);
 }
 
-point * create_point(int a, int b){
-    point * res = malloc(sizeof(point));
+Point * create_point(int a, int b){
+    Point * res = malloc(sizeof(Point));
     res->x = a;
     res->y = b;
     return res;
 }
 
-void move(point * p, int dx, int dy){
+void move(Point * p, int dx, int dy){
     p->x += dx;
     p->y += dy;
 }

@@ -1,13 +1,13 @@
 #ifndef POINT
 #define POINT
 
-typedef struct _point{
+typedef struct _Point{
     int x;
     int y;
-} point;
+} Point;
 
-void print_point(point * p);
-point * create_point(int a, int b);
-void move(point * p, int dx, int dy);
+void print_point(Point * p);
+Point * create_point(int a, int b);
+void move(Point * p, int dx, int dy);
 
 #endif
